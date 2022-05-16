@@ -14,7 +14,7 @@
     @apply shadow-md rounded-lg 
 }
 .card-recommended{
-    @apply w-48 h-64 flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl
+    @apply w-48 h-64 flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl lg:w-60
 }
 
 .card > .card-bg{

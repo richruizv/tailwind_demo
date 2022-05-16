@@ -13,14 +13,17 @@
     <section class="w-full h-screen">
         <div id="home">
             <div class="w-full h-3/4">
-                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                    <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-whitin:shadow-sm focus:ring-2 focus:w-11/12" placeholder="san Francisco" type="search" name="" id="">
-                    <button class="w-36 bg-white text-lg rounded-full font-semibold p-4 text-primary transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:items-start lg:space-y-0 lg:items-items-start lg:pt-20 lg:justify-start ">
+                    <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-whitin:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="san Francisco" type="search" name="" id="">
+                    <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+                        <p class="text-4xl ml-16 font-bold text-black">Encuentra más ubicaciones como esta</p>
+                    </div>
+                    <button class="w-36 bg-white text-lg rounded-full font-semibold p-4 text-primary transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16">
                         Explorar
                     </button>
                 </div>
-                <div class="w-full h-full">
-                    <img src="./img/sanFrancisco.jpg" alt="">
+                <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                    <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="">
                 </div>
             </div>
         </div>
