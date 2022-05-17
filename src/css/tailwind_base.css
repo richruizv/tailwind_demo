@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body{
+    @apply font-Montserrat
+}
+
+.section-title{
+    @apply text-3xl font-semibold text-primary pb-5
+}
+
+.card{
+    @apply shadow-md rounded-lg 
+}
+.card-recommended{
+    @apply w-48 h-64 flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl lg:w-60
+}
+
+.card > .card-bg{
+    @apply w-full h-3/5  bg-cover rounded-t-lg
+}
+
+.card > .card-info{
+    @apply w-full h-2/5 bg-secondary rounded-b-lg px-4 py-2
+}
+
+.card .card-info-title{
+    @apply text-white text-xl font-bold
+}
+
+.card .card-info-description{
+    @apply text-white
+}
+
+.card.card-inverse > .card-info{
+    @apply bg-white
+}
+
+.card.card-inverse .card-info-title,  .card.card-inverse .card-info-description{
+    @apply text-terciary
+}
+
+.card-featured{
+    @apply w-full h-96
+}
+
+.card-featured > .card-container{
+    @apply w-full h-96 bg-cover rounded-xl
+}
+.card-featured > .card-container > .card-title{
+    @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
+}
+.card-featured > .card-container > .card-description{
+    @apply text-sm pl-8 text-black mr-24
+}
+
+.faq-container > .faq-title{
+    @apply text-xl font-medium text-primary
+}
+
+.faq-container > .faq-description{
+    @apply text-sm pt-2 
+}
