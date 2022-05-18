@@ -2,32 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-.pb-home-section{
-    @apply w-full h-96 p-5  px-20
-}
-.pb-step-container{
-    @apply mt-20 w-full h-auto flex flex-col space-y-10 md:flex-row  md:space-x-5 md:space-y-0 md:justify-center md:flex-wrap	
-}
+/* move this code to components/stepper.css */
 
 .pb-title{
     @apply text-center
 }
 .pb-title > span{
-    @apply text-[39px]
+    @apply text-4xl
 }
-.pb-title > strong{
-    @apply text-6xl text-primary
+.pb-title > .strong{
+    @apply text-6xl text-play-green
 }
+.pb-home-section{
+    @apply w-full h-96 p-5
+}
+.pb-step-container{
+    @apply mt-20 w-full h-auto flex flex-col space-y-10 mb-12
+    md:flex-row md:space-x-5 md:space-y-5 md:justify-center md:flex-wrap
 
+}
+.pb-step-card:first-child{
+    @apply md:mt-5 /*this is related to md:space-y-5 in pb-step-container */
+}
 .pb-step-card{
-    @apply bg-neutral-100 pt-10 px-5 pb-8 text-center relative md:basis-1/4
+    @apply bg-neutral-100 pt-10 px-5 pb-8 text-center relative basis-1/5 h-auto
 }
 .pb-step--title{
     @apply font-bold text-xl mb-5
 }
 .pb-step--icon{
-    @apply  w-10 h-10  rounded-full p-2 bg-secondary absolute -mt-14 -ml-2 left-1/2
+    @apply  w-10 h-10  rounded-full p-2 bg-play-gray absolute -mt-14 -ml-2 left-1/2
 }
-.pb-setp--icon > img{
+.pb-step--icon > img{
     @apply w-6 block mx-auto
 }
+  
+
+/* Base components */
+.btn {
+    @apply text-center inline-block px-5 py-3.5 rounded transition-all duration-75 focus:outline-none;
+  }
+
+  .btn.btn-green {
+    @apply px-8 py-4 bg-play-green text-white hover:bg-play-green-hover active:bg-play-green-active active:shadow-lg;
+  }
+
+  .btn.btn-gray {
+    @apply px-8 py-4 bg-play-gray text-white hover:bg-play-gray-hover active:bg-play-gray-active active:shadow-lg;
+  }
