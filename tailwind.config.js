@@ -53,6 +53,21 @@ module.exports = {
         'play-white': '#ffffff',
         'play-background-gray': '#f7f7f7'
       },
+      colors:{
+        'primary': '#A5D239',
+        'secondary': '#243D42',
+        'play-green': '#a5d239',
+        'play-green-active': '#85db2a',
+        'play-green-hover': '#87c931',
+        'play-gray' : '#243d42',
+        'play-gray-active': '#288c89',
+        'play-gray-hover': '#305d60',
+        'play-black': '#000000',
+        'play-dark-gray': '#606060',
+        'play-light-gray': '#c9c9c9',
+        'play-white': '#ffffff',
+        'play-background-gray': '#f7f7f7'
+      },
       fontFamily:{
         Montserrat : ['Montserrat','sans-serif']
       }
