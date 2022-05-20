@@ -472,6 +472,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -487,9 +491,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mt-7 {
@@ -524,6 +528,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: auto;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -544,6 +552,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 6rem;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -560,12 +572,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
 .basis-2\/6 {
   flex-basis: 33.333333%;
 }
 
 .basis-3\/12 {
   flex-basis: 25%;
+}
+
+.basis-8\/12 {
+  flex-basis: 66.666667%;
+}
+
+.basis-1\/12 {
+  flex-basis: 8.333333%;
+}
+
+.basis-2\/12 {
+  flex-basis: 16.666667%;
+}
+
+.basis-9\/12 {
+  flex-basis: 75%;
 }
 
 .transform {
@@ -626,12 +658,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
 
 .overscroll-x-contain {
   overscroll-behavior-x: contain;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.text-clip {
+  text-overflow: clip;
+}
+
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .rounded-full {
@@ -707,6 +755,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.75rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -720,6 +773,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .pb-6 {
@@ -738,14 +809,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-right {
+  text-align: right;
 }
 
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-sm {
@@ -829,64 +904,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 /* move this code to components/success_cases.css */
-
-.success--card {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-}
-
-@media (min-width: 768px) {
-  .success--card {
-    flex-basis: 33.333333%;
-  }
-}
-
-.success--first > img {
-  margin: auto;
-  height: auto;
-  width: 3rem;
-  border-radius: 9999px;
-}
-
-@media (min-width: 768px) {
-  .success--first > img {
-    width: 5rem;
-  }
-}
-
-.success--first {
-  display: flex;
-  flex-basis: 25%;
-  align-items: center;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.success--second {
-  flex-basis: 66.666667%;
-}
-
-.success--second > .success-name {
-  height: 1.75rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.success--third {
-  flex-basis: 8.333333%;
-  padding-right: 0.75rem;
-  text-align: right;
-}
-
-.success--third .success-percentage {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-}
 
 /* Base components */
 
@@ -1029,8 +1046,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
+  .md\:w-20 {
+    width: 5rem;
+  }
+
+  .md\:w-24 {
+    width: 6rem;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:basis-1\/3 {
     flex-basis: 33.333333%;
+  }
+
+  .md\:basis-3\/12 {
+    flex-basis: 25%;
   }
 
   .md\:flex-row {
@@ -1051,6 +1084,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .md\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 }
 
@@ -1108,6 +1156,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:bg-center {
     background-position: center;
+  }
+
+  .lg\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .lg\:pt-20 {

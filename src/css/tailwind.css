@@ -4,31 +4,6 @@
 
 /* move this code to components/success_cases.css */
 
-.success--card {
-    @apply flex my-4 md:basis-1/3
-}
-.success--first > img {
-    @apply w-12 h-auto rounded-full m-auto md:w-20 
-    
-}
-.success--first {
-    @apply basis-3/12 px-3 pb-3 flex items-center
-}
-
-.success--second {
-    @apply basis-8/12
-}
-.success--second > .success-name {
-    @apply text-lg h-7 text-ellipsis  overflow-hidden
-
-}
-.success--third {
-    @apply basis-1/12 text-right pr-3
-}
-.success--third .success-percentage{
-    @apply text-lg font-bold
-}
-
 
 /* Base components */
 
