@@ -33,3 +33,23 @@
   .btn.btn-gray {
     @apply px-8 py-4 bg-play-gray text-white hover:bg-play-gray-hover active:bg-play-gray-active active:shadow-lg;
   }
+  h3 {
+    font-size: 2.25rem;
+  }
+  h4 {
+    font-size: 1.953rem;
+  }
+/*
+  .animate-background{
+    background-repeat: repeat-x;
+    animation: animatedBackground 60s linear infinite;
+  }
+
+  @keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }*/

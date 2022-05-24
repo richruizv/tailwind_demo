@@ -5,6 +5,9 @@ module.exports = {
   darkMode: "media",
   theme: {
     extend: {
+      animation : {
+        "animated-background": "move-bg 60s linear infinite"
+      },
       backgroundImage : {
         'sanFrancisco': "url('../img/sanFrancisco.jpg')",
 			  'sanFranciscoDesktop': "url('../img/sanFranciscoDesktop.jpg')",
@@ -70,6 +73,12 @@ module.exports = {
       },
       fontFamily:{
         Montserrat : ['Montserrat','sans-serif']
+      },
+      keyframes:{
+        'move-bg':{
+          "0%" : { 'background-position': '0 0' },
+          "100%" : { 'background-position': ' 100% 0'}
+        }
       }
     },
   },
